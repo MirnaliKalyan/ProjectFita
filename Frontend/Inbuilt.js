@@ -1,0 +1,42 @@
+let a="Hello World";
+console.log(a.padStart(10));
+console.log(a.padEnd(10));
+console.log(a.padStart(20,"*"));
+console.log(a.padEnd(20,"*"));
+console.log(a.repeat(3));
+console.log(a.slice(0,5));
+console.log(a.slice(6,11));
+console.log(a.toUpperCase());
+console.log(a.toLowerCase());
+console.log(a.length);
+console.log(a.split(" "));
+console.log(a.substring(0,5));
+console.log(a.substring(6,11));
+console.log(a.charAt(0));
+console.log(a.charAt(6));
+// True or False
+console.log(a.includes("World"));
+console.log(a.startsWith("Hello"));
+console.log(a.endsWith("World"));
+console.log(a.indexOf("World"));
+console.log(a.lastIndexOf("World"));
+
+//Array inbuilt methods
+let arr=[1,2,3,4,5];
+console.log(arr.length);
+console.log(arr.push(6));
+console.log(arr);
+console.log(arr.unshift(0));
+console.log(arr);
+console.log(arr.pop());
+console.log(arr.indexOf(3));
+console.log(arr.includes(4));
+console.log(arr.reverse());
+arr.sort(function(a,b){return a-b});
+console.log(arr);
+arr.sort(function(a,b){return b-a});
+console.log(arr);
+console.log(arr.slice(1,4));
+console.log(arr.splice(1,2));
+console.log(arr.join(","));
+console.log(arr.copyWithin(0,2,4));

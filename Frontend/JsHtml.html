@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p"></p>
+    <p id="p1"></p>
+    <P id="p2"></P>
+
+<div id="d">
+</div>
+
+    <p class="p3"> Hello</p>
+    <p class="p3"> Welcome</p>
+    <p class="p3"> All</p>
+
+    <script>
+       document.getElementById("p").innerText="Welcome to the Shop";
+        console.log(document.getElementById("p").textContent);
+       document.getElementById("p1").innerText= document.getElementById("p").textContent;
+
+      document.getElementById("p2").innerHTML="Enjoy your day!";
+       p2.style.color="Green";
+
+        document.getElementById("p1").remove();
+
+     
+      for (let i=0;i<=4;i++){
+      let newPtag=document.createElement("p");
+          newPtag.innerHTML="Everything you need is here";
+          document.getElementById("d").append(newPtag)
+      }
+     
+
+     let ptags = document.getElementsByClassName("p3");
+for (let index = 0; index < ptags.length; index++) {
+ ptags[index].style.color="red";
+}
+      
+    </script>
+</body>
+</html>
